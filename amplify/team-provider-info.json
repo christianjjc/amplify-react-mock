@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-maquetaapps-staging-221430-authRole",
+      "UnauthRoleArn": "arn:aws:iam::937708460455:role/amplify-maquetaapps-staging-221430-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::937708460455:role/amplify-maquetaapps-staging-221430-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-maquetaapps-staging-221430-deployment",
+      "UnauthRoleName": "amplify-maquetaapps-staging-221430-unauthRole",
+      "StackName": "amplify-maquetaapps-staging-221430",
+      "StackId": "arn:aws:cloudformation:us-east-2:937708460455:stack/amplify-maquetaapps-staging-221430/ffe02d80-9096-11ee-b49d-0aaf5dd90383",
+      "AmplifyAppId": "dd9we5w83iqe7"
+    },
+    "categories": {
+      "auth": {
+        "maquetaapps": {}
+      }
+    }
+  }
+}
