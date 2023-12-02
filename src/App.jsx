@@ -56,7 +56,7 @@ function App() {
         variation="modal"
         formFields={formFields}
         components={components}
-        hideSignUp={true}>
+        hideSignUp={false}>
         {({ signOut, user }) => {
           return (
             <>
