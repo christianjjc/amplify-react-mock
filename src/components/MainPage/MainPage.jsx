@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { getCurrentUser, fetchUserAttributes } from "aws-amplify/auth";
 import { Link } from "react-router-dom";
 
-const MainPage = () => {
+const MainPage = ({ children }) => {
   async function handleFetchUserAttributes() {
     try {
       const userAttributes = await fetchUserAttributes();
@@ -38,6 +38,7 @@ const MainPage = () => {
         </div>
         <div className="row p-3 my-4">
           {/* <Link to={"/productos-mant"}>Ir a la página de Productos</Link> */}
+          {children}
         </div>
       </section>
     </>

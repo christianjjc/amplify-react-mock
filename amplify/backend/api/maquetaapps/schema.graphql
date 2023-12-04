@@ -1,0 +1,16 @@
+type FD @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  detalle_string: String!
+  total_detalle: Float!
+  facturasID: ID! @index(name: "byFacturas")
+}
+
+type Facturas @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  numero: String!
+  total: Float!
+  detalle_array: [String!]
+  factura_factura_detalle: [FD] @hasMany(indexName: "byFacturas", fields: ["id"])
+  detalle_normal: String
+}
+ 
