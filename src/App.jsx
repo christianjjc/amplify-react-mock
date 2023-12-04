@@ -6,6 +6,7 @@ import "@aws-amplify/ui-react/styles.css";
 import awsExports from "./aws-exports";
 import Header from "./components/Header/Header";
 import MainPage from "./components/MainPage/MainPage";
+import FacturasListado from "./components/Facturas/FacturasListado";
 
 Amplify.configure(awsExports);
 
@@ -65,8 +66,7 @@ function App() {
               </header>
               <main>
                 <Routes>
-                  <Route path="/" element={<MainPage />} />
-                  {/* <Route path="/productos-mant" element={<ProductosMant />} /> */}
+                  <Route path="/" element={<MainPage children={<FacturasListado />} />} />
                 </Routes>
               </main>
               <footer></footer>
